@@ -113,3 +113,5 @@ Create a GITHUB repository for this project and add the link to it in the commen
    https://vicksheet.medium.com/getting-started-with-hibernate-an-introduction-to-the-orm-framework-for-java-applications-fd97af01b7a6
 * Video:   
    https://www.youtube.com/watch?v=NC-1j1grMPI&ab_channel=ManningPublications
+
+FINAL
