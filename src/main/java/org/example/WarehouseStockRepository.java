@@ -1,4 +1,8 @@
 package org.example;
 
-public interface WarehouseStockRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface WarehouseStockRepository
+        extends CrudRepository<WarehouseStock, Integer> {
+
 }
