@@ -1,12 +1,9 @@
 package org.example;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-@Entity
+import jakarta.persistence.*;
+
+@Embeddable
 public class ProductData {
-    @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     public String productId;
     public String productName;

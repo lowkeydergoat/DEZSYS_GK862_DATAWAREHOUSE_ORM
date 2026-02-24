@@ -1,10 +1,7 @@
 package org.example;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -13,18 +10,23 @@ public class WarehouseStock {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private String warehouseId;
+    private Integer warehouseId;
     public String warehouseName;
     public String timestamp;
     public String warehouseCountry;
     public String warehouseCity;
     public String address;
 
+    @ElementCollection
+    public List<Einkauf> purchaseRecords;
+
+
+    @ElementCollection
     public List<ProductData> productData;
 
     public WarehouseStock() {}
 
-    public WarehouseStock(String warehouseId,
+    public WarehouseStock(
                           String warehouseName,
                           String timestamp,
                           String warehouseCountry,
@@ -32,7 +34,6 @@ public class WarehouseStock {
                           String address,
                           List<ProductData> productData) {
 
-        this.warehouseId = warehouseId;
         this.warehouseName = warehouseName;
         this.timestamp = timestamp;
         this.warehouseCountry = warehouseCountry;
