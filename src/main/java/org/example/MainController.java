@@ -51,9 +51,9 @@ public class MainController {
 				ProductData product = new ProductData(
 						String.valueOf(p),
 						productname + p,
-						"String productCategory",
+						"sinnvolles produkt",
 						1,
-						"String productUnit"
+						"anzahl"
 				);
 				products.add(product);
 			}
@@ -61,10 +61,10 @@ public class MainController {
 			WarehouseStock warehouse = new WarehouseStock(
 
 					whname + w,
-					"String timestamp",
-					"String warehouseCountry",
-					"String warehouseCity",
-					"String address",
+					"16:50:50",
+					"austria",
+					"wien",
+					"wexstrasse 20",
 					products
 			);
 
